@@ -1,12 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Quicksand&display=swap');
 body {
     background-color: black;
-}
+    font-family: inter;
+  }
 html {
     color: white;
 }
 a {
   position: relative;
 }
+a:hover {
+  cursor:pointer;
+}
+h1 {
+  text-transform: uppercase;
+}
+summary p {
+  display: inline;
+}
+
 
 a::before {
     content: '';
@@ -40,6 +52,7 @@ a {
 nav {
     background-color: rgb(56, 52, 70);
     border-bottom: solid 2px rgb(141, 100, 100);
+
 }
 nav li {
     display: inline;
@@ -47,6 +60,7 @@ nav li {
     border: 20px;
     font-family:  sans-serif;
     text-align: left;
+
 }
 /* spacing */
 table{
