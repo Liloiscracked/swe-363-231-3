@@ -1,0 +1,87 @@
+body {
+    background-color: black;
+}
+html {
+    color: white;
+}
+a {
+  position: relative;
+}
+
+a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: paleturquoise;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+  }
+
+a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+/* Presentational Styles */
+
+
+a {
+  text-decoration: none;
+  color: rgb(13, 119, 108);
+  font-weight: 700;
+  vertical-align: top;
+}
+
+nav {
+    background-color: rgb(56, 52, 70);
+    border-bottom: solid 2px rgb(141, 100, 100);
+}
+nav li {
+    display: inline;
+    margin-right: 20px;
+    border: 20px;
+    font-family:  sans-serif;
+    text-align: left;
+}
+/* spacing */
+table{
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 3px solid purple;
+  }
+  
+  thead th:nth-child(1) {
+    width: 30%;
+  }
+  
+  thead th:nth-child(2) {
+    width: 20%;
+  }
+  
+  thead th:nth-child(3) {
+    width: 15%;
+  }
+  
+  thead th:nth-child(4) {
+    width: 35%;
+  }
+  
+  th,
+  td {
+    padding: 20px;
+  }
+
+footer{
+    margin-top: 10px;
+    border-top: solid rgb(35, 43, 149) 2px;
+}
+  
+td {
+  position: center;
+}
