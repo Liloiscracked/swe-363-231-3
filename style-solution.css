@@ -21,11 +21,12 @@ body {
   }
   
   em {
-    color:#faa000;
+    color:blue;
   }
   
   #the_most_important {
     text-transform:uppercase;
+    background: gold;
   }
   
   h1,h2,h3 {
@@ -33,6 +34,7 @@ body {
   }
   
   h2 {
+    font-family: sans-serif;
     border-bottom:1px solid #3e4749;
   }
   
@@ -83,15 +85,15 @@ body {
   }
   
   ::selection {
-    background-color: #ff4b01;
+    background-color: #ff8d53;
   }
-  
-  a:hover {
+
+  section a:hover {
     cursor:pointer;
   }
   
   input {
-    height:30px;
+    height:20px;
   }
   
   input:not([type="submit"]){

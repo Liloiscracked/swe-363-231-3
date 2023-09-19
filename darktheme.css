@@ -18,8 +18,6 @@ h1 {
 summary p {
   display: inline;
 }
-
-
 a::before {
     content: '';
     position: absolute;
@@ -94,6 +92,9 @@ table{
 footer{
     margin-top: 10px;
     border-top: solid rgb(35, 43, 149) 2px;
+}
+th {
+  text-transform: uppercase;
 }
   
 td {
