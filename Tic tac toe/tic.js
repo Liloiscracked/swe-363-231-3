@@ -424,3 +424,81 @@ function myfunc_11() {
 		flag = 1;
 	}
 }
+let custom_style={
+	background : "red"
+}
+let regular = {
+	background : "white"
+}
+
+// Using navigation 
+let nav = ["b1","b2","b3","b4","b5","b6","b7","b8","b9"]
+let current = 0;
+document.addEventListener("keydown",(event)=>{
+	console.log(event.key)
+	//Object.assign():
+	Object.assign(document.getElementById(nav[current]).style,custom_style);
+
+	if(event.key == "ArrowUp"){
+		if(current == 0){
+			current = 6
+		}
+		else if (current == 1){
+			current = 7
+		}
+		else if (current == 2){
+			current = 8
+		}
+		else  {
+			current = current - 3 
+		}
+	}
+	else if(event.key == "ArrowDown"){
+		if(current == 8){
+			current = 2
+		}
+		else if (current == 7){
+			current = 1
+		}
+		else if (current == 6){
+			current = 0
+		}
+		else{
+			current = current + 3
+		}
+	}
+	else  if(event.key == "ArrowRight"){
+		if(current == 2 || current == 5 || current == 8){
+			current = current - 2
+		}
+		else {
+			current = current + 1
+		}
+	}
+	if(event.key == "ArrowLeft"){
+		if(current == 0 || current == 3 || current == 6){
+			current = current + 2
+		}
+		else {
+			current = current - 1
+		}
+	}
+	else if(event.key == "Enter" || event.key == ""){
+		if (flag == 1) {
+			document.getElementById(nav[current]).value = "X";
+			document.getElementById(nav[current]).disabled = true;
+			flag = 0;
+		}
+		else {
+			document.getElementById(nav[current]).value = "0";
+			document.getElementById(nav[current]).disabled = true;
+			flag = 1;
+		}
+		myfunc()
+	}
+	else if (event.key == "r"){
+		myfunc_2()
+	}
+	Object.assign(document.getElementById(nav[current]).style,regular);
+
+})
