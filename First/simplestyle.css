@@ -125,3 +125,19 @@ nav .menu{
     background-repeat: no-repeat;
     background-size: cover;
 }
+#screensaver {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  z-index: 999;
+  display: none;
+}
+
+#screensaver-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}

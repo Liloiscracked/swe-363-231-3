@@ -1,0 +1,8 @@
+div{
+    background-color: brown;
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
