@@ -30,3 +30,5 @@ customEmitter.on('userLoggedOut', (userId) => {
 
 // Start simulation with the first user logging in
 simulateLogin(1);
+
+
